@@ -1,0 +1,23 @@
+{
+  "name": "atividade-01",
+  "version": "1.0.0",
+  "description": "Atividade 01 da disciplina APIs e Webservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niltonfernandesj/consuming-soap-apis-with-nodejs.git"
+  },
+  "author": "Nilton Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niltonfernandesj/consuming-soap-apis-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/niltonfernandesj/consuming-soap-apis-with-nodejs#readme",
+  "dependencies": {
+    "request": "^2.88.2",
+    "xml-js": "^1.6.11"
+  }
+}
