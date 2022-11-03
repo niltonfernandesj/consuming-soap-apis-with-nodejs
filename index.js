@@ -11,13 +11,13 @@ request('https://www.crcind.com/csp/samples/SOAP.Demo.cls?soap_method=AddInteger
 // DivideInteger
 request('https://www.crcind.com/csp/samples/SOAP.Demo.cls?soap_method=DivideInteger&Arg1=1&Arg2=1', function (error, response, body) {
     const convertedBody = JSON.parse(convert.xml2json(body, {compact: true, spaces: 1}));
-    const addIntegerResponse = convertedBody["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["DivideIntegerResponse"]["DivideIntegerResult"]._text;
-    console.log("\n\nDivideIntegerResponse: " + addIntegerResponse);
+    const divideIntegerResponse = convertedBody["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["DivideIntegerResponse"]["DivideIntegerResult"]._text;
+    console.log("\n\nDivideIntegerResponse: " + divideIntegerResponse);
 });
 
 // FindPerson
 request('https://www.crcind.com/csp/samples/SOAP.Demo.cls?soap_method=FindPerson&id=50', function (error, response, body) {
     const convertedBody = JSON.parse(convert.xml2json(body, {compact: true, spaces: 1}));
-    const addIntegerResponse = convertedBody["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["FindPersonResponse"]["FindPersonResult"];
-    console.log("\n\nFindPersonResponse: " + JSON.stringify(addIntegerResponse));
+    const findPersonResponse = convertedBody["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["FindPersonResponse"]["FindPersonResult"];
+    console.log("\n\nFindPersonResponse: " + JSON.stringify(findPersonResponse));
 });
